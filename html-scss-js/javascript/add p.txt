@@ -1,0 +1,10 @@
+ const newDiv = document.createElement("p");
+    newDiv.classList.add('chatMsg');
+    let chatInput = "Hello"
+    const newContent = document.createTextNode(chatInput);
+    newDiv.appendChild(newContent);
+    const widget = document.querySelector("div");
+    let chatWrapper = document.querySelector("chat-wrapper");
+    
+    
+    widget.insertBefore(newDiv, chatWrapper);
